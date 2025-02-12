@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body class="select-none">
+  
+  <section class="">
+    <!-- Main Navbar -->
+    <nav class="relative px-3 md:px-20 z-50 flex justify-between items-center  py-6 bg-blue-400 text-black ">
+      <!-- Logo -->
+     <ul class="ml-3">
+      <li class="text-2xl font-bold text-white"><img src="1738766493530.jpg" alt="" class="w-[4rem] h-[4rem] rounded-full"></li>
+     </ul>
+      <!-- Mobile Menu Toggle Button -->
+      <button id="open-menu" class="block lg:hidden text-[1.5rem]">
+        &#9776;
+      </button>
+      <!-- Desktop Menu -->
+      <ul id="menu" class="hidden lg:flex gap-10">
+        <li><a href="#home" class="hover:text-gray-500 text-[1.2rem] font-medium text-white">Home</a></li>
+        <li><a href="#about" class="hover:text-gray-500 text-[1.2rem] font-medium text-white">About</a></li>
+       <li><a href="#services" class="hover:text-gray-500 text-[1.2rem] font-medium text-white">Services</a></li></li>
+        <li><a href="#skills" class="hover:text-gray-500 text-[1.2rem] font-medium text-white">Skills</a></li>
+       <li><a href="#contact" class="hover:text-gray-500 text-[1.2rem] font-medium text-white">content</a></li>
+       
+      </ul>
+    </nav>
+
+    <!-- Mobile Side Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 bg-blue-500 w-72 h-[30rem] text-black p-10 z-50 overflow-y-auto">
+      <!-- Close Button -->
+      <button id="close-menu" class="text-right text-[1.5rem] mb-6 text-white">
+          &#10005;
+      </button>
+      
+      <!-- Side Menu Items -->
+      <ul class="flex flex-col gap-6 text-[1.2rem]">
+          <li><a href="#home" class="hover:text-gray-300 text-white">Home</a></li>
+          <li><a href="#about" class="hover:text-gray-300 text-white">About</a></li>
+          <li><a href="#services" class="hover:text-gray-300 text-white">Services</a></li>
+          <li><a href="#skills" class="hover:text-gray-300 text-white">Skills</a></li>
+          <li><a href="#contact" class="hover:text-gray-300 text-white">Contact</a></li>
+      </ul>
+  </div>
+
+  <!-- JavaScript for Opening & Closing Menu -->
+ 
+  </section>
+
+  <!-- Add the JavaScript -->
+
+
+
+  <section class=" flex flex-col lg:flex-row justify-center gap-10 lg:gap-72 p-6 h-screen lg:p-10 items-center  bg-[url('https://th.bing.com/th/id/R.abf734d53c75997fad8401ce4dd36c66?rik=i38vdYvrySogHQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2flKeljXZ.jpg&ehk=aqHGwfUwPdL1LqTm1M2UF9ENt6GlksONMXxau2BEgm0%3d&risl=&pid=ImgRaw&r=0')]
+  ">
+    <!-- Image Section -->
+    <div class="flex justify-center lg:justify-start" data-aos="fade-down-right" data-aos-duration="600">
+      <img
+        src="https://imagedelivery.net/KMb5EadhEKC1gAE0LkjL1g/0c8cce98-2ac9-421b-62cf-87d62d5a4c00/public"
+        alt="3D Cube Animation"
+        class="w-64 sm:w-64 md:w-72 lg:w-80 xl:w-[30rem]"
+      />
+    </div>
+  
+   <div class="flex flex-col justify-center items-center gap-4">
+    <h1 class="text-[2.8rem] md:text-4xl line-height-[2.5rem] font-bold text-center text-white">Hello , my name is</h1>
+    <h1 class="text-[2.5rem] md:text-4xl line-height-[2.5rem] font-bold text-center text-white">Gauri Singh</h1>
+    <h1 class="text-[2.4rem] md:text-4xl line-height-[2.5rem] font-bold text-center text-white">I am a UI Developer</h1>
+   
+    <div class="mt-6 flex justify-center">
+      <button id="toggle-dark-mode" class="px-4 py-4  text-white rounded-md border-[1px]  border-white  flex items-center space-x-2 transition-all">
+        <!-- Sun Icon (Light Mode) -->
+        <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m8.66-10h-2m-12 0H3m16.95-4.95l-1.41 1.41M6.46 6.46L5.05 5.05m12.9 12.9l1.41 1.41M6.46 17.54l-1.41 1.41M12 6a6 6 0 100 12 6 6 0 000-12z"/>
+        </svg>
+
+        <!-- Moon Icon (Dark Mode) -->
+        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 0111.21 3 7 7 0 1012.79 21 9 9 0 0121 12.79z"/>
+        </svg>
+
+        <span class="text-[1.5rem]">Toggle Dark Mode</span>
+    </button>
+  </div>
+  </div>
+  </section>
+  
+
+  <!-- About Section -------------------------------------------------------------------------------------------------------->
+  <div class="flex justify-center mt-20">
+    <h1 id="about" class="text-3xl font-bold mb-4 text-center">About</h1>
+  </div>
+  <section class="px-4 py-8 flex flex-col lg:flex-row items-center md:p-10">
+    <!-- Image Section -->
+    <div class=" flex justify-center mb-6 lg:mb-0 lg:mr-6" data-aos="fade-right" data-aos-duration="600">
+
+
+      <img src="1738766493530.jpg" alt="Gauri Singh"
+        class="md:w-42   md:h-60 w-[15rem] h-[20rem] w-[20rem] sm:w-[18rem] sm:h-[18rem] lg:w-[30rem] lg:h-[30rem] rounded-[4rem] object-cover border-[1px] border-blue-500" />
+
+    </div>
+
+    <!-- Text Section -->
+    <section class="p-4 flex flex-col items-center sm:p-6 max-w-2xl lg:max-w-4xl text-center lg:text-left " data-aos="fade-up-left ">
+
+      <p class="text-[1.4rem] font-bold mb-4">
+        ___Showcasing My Work___
+      </p>
+
+      <p class="text-[1.3rem]  mb-4 leading-relaxed">
+        Welcome to my portfolio! I'm Gauri Singh, a creative and dedicated Front-End Developer with a passion for
+        turning ideas into visually stunning and functional digital experiences. My work reflects a strong commitment to
+        quality, innovation, and user-centric design.
+        With expertise in HTML, CSS, JavaScript, and frameworks like React and Tailwind CSS, I have built responsive
+        websites, interactive web applications, and intuitive user interfaces. Each project in my portfolio represents a
+        blend of creativity and technical proficiency, tailored to meet unique client needs.
+      </p>
+
+      
+
+<div>
+ 
+  <a href="https://example.com/file.pdf" download class="Btn">
+    <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+      <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+    </svg>
+    <span class="icon2"></span>
+    <span class="tooltip">Download</span>
+  </a>
+  
+</div>
+    </section>
+  </section>
+
+  <section>
+    <div class="flex  justify-center items-center">
+      <h1 id="services" class="text-[3rem] text-bold">Services</h1>
+    </div>
+    <div class="flex flex-col md:flex-row justify-center gap-10 p-4 ">
+  
+  
+      <div class="flex justify-center" data-aos="zoom-in-right" data-aos-duration="600">
+  
+        <div class="e-card playing">
+          <div class="image"></div>
+  
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+  
+          <div class="infotop ">
+            <div class="items-center flex flex-col gap-4">
+              <span><i class="fa-solid fa-code text-[3rem]"></i></span>
+              <h1 class="text-[2rem]">Web Designing</h1>
+              <p class="text-[1.2rem] md:text-[1rem] p-4">I am excited to bring
+                my creativity and skills to
+                the world of web development. I am passionate about designing clean</p>
+              <div class="name">
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <a href="https://github.com/gaurisingh78787">
+        <div class="flex  justify-center ">
+          <div class="e-card playing " data-aos="zoom-out-up" data-aos-duration="600">
+            <div class="image"></div>
+  
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+  
+  
+            <div class="infotop flex flex-col gap-1">
+              <i class="fa-brands fa-github text-[4rem]"></i>
+              <div class="name "><span class="text-[2rem]   font-bold">Github management</span></div>
+              <span class="text-[1.2rem] md:text-[1rem] p-4  ">I offer version control and project management services on
+                GitHub, ensuring smooth collaboration and organized code repositories.</span>
+              <div>
+  
+  
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+  
+      <div class="flex justify-center">
+        <div class="e-card playing " data-aos="zoom-in-left" data-aos-duration="600">
+          <div class="image"></div>
+  
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+  
+  
+          <div class="name flex flex-col gap-1 justify-center">
+            <div class="flex justify-center">
+              <img src="https://llaman-devll.netlify.app/api-page-svgrepo-com.svg" alt="" class="w-[5rem]">
+            </div>
+            <h1 class="flex justify-center text-[2rem] text-white font-bold">API
+              integration</h1>
+            <p class="text-[1.2rem] md:text-[1rem] p-4 flex
+                    justify-center items-center text-white font-medium">I specialize in
+              connecting and integrating applications and services
+              through APIs, enabling
+              data exchange and functionality enhancement.</p>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+ 
+
+
+
+
+  <section class="p-4">
+    <div id="skills" class="flex flex-col justify-center items-center gap-6 mt-20">
+      <h1 class=" text-5xl font-medium ">My Skills</h1>
+      <h1 class="text-2xl font-medium">___what i know___</h1>
+      
+    </div>
+    
+    <!-- Main Content -->
+    
+    <div
+      class="flex flex-col  lg:flex-row items-center lg:items-start justify-between md:justify-center   md:px-10">
+      <!-- Profile Section -->
+
+      <div class="flex flex-col  w-full lg:w-1/2">
+        
+        <section class="p-6 max-w-full mx-auto lg:mx-0">
+
+<div class="flex flex-col justify-start  ">
+  <h1 class="md:text-[1.9rem] text-[1.5rem] font-bold">My Different Types of skills</h1>
+</div>
+          <p class="text-[1.4rem] font-medium lg:text-lg  mb-4 leading-relaxed line-height-42">
+            Welcome to my portfolio! Here, you’ll find a showcase of my best projects, where I’ve applied my skills in
+            web development, design, and creativity to deliver exceptional results for clients and personal endeavors.
+            From concept to deployment, I work closely with clients to understand their goals and deliver tailored
+            solutions. My expertise spans technologies such as HTML, CSS, JavaScript, and frameworks like React and
+            Tailwind CSS.   My portfolio highlights responsive websites, interactive web applications, and user-friendly designs that
+            cater to diverse industries. Whether it’s a minimalist landing page, a full-stack web app, or a custom
+            e-commerce solution, each project demonstrates my dedication to quality and innovation.
+          </p>
+          
+          
+        </section>
+      </div>
+
+      <!-- Skills Section -->
+      <section class="w-full lg:w-1/3 mt-20">
+
+        <div class="">
+          <!-- HTML Skill -->
+          <div class="mb-4">
+            <div class="flex justify-between text-sm">
+              <span class="text-[1.5rem]  md:text-[1rem]">HTML</span>
+              <span id="html-percent" class="text-[1.2rem] md:text-[1rem]">100%</span>
+            </div>
+            <div class="h-3 bg-gray-200 rounded">
+              <div id="html-bar" class="h-3 bg-blue-500 rounded" style="width: 100%;"></div>
+            </div>
+          </div>
+          <!-- CSS Skill -->
+          <div class="mb-4">
+            <div class="flex justify-between text-sm">
+              <span class="text-[1.5rem]  md:text-[1rem]">CSS</span>
+              <span id="css-percent" class="text-[1.2rem] md:text-[1rem]">90%</span>
+            </div>
+            <div class="h-3 bg-gray-200 rounded">
+              <div id="css-bar" class="h-3 bg-blue-500 rounded" style="width: 90%;"></div>
+            </div>
+          </div>
+          <!-- JavaScript Skill -->
+          <div class="mb-4">
+            <div class="flex justify-between text-sm">
+              <span class="text-[1.5rem]  md:text-[1rem]">JavaScript</span>
+              <span id="javascript-percent"  class="text-[1.2rem] md:text-[1rem]">75%</span>
+            </div>
+            <div class="h-3 bg-gray-200 rounded">
+              <div id="javascript-bar" class="h-3 bg-blue-500 rounded" style="width: 75%;"></div>
+            </div>
+          </div>
+          <!-- Photoshop Skill -->
+
+        </div>
+      </section>
+    </div>
+  </section>
+
+<div id="contact" class="flex justify-center flex-col items-center">
+  <div>
+    <h1 class="text-[3rem] text-bold mt-20">Contact Me</h1>
+  </div>
+</div>
+
+  <div class="flex flex-col lg:flex-row justify-center gap-8 lg:gap-20 min-h-screen  px-4 sm:px-6 items-center">
+    
+
+    <div class=" px-4 py-8 sm:px-6 lg:px-8 "data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+      <div class="max-w-2xl mx-auto">
+        <!-- Header -->
+        <h2 class="text-2xl font-bold ">GET IN TOUCH</h2>
+        <p class="mt-2  text-[1.4rem]">
+          If you are interested in working together? Please fill out the form aside with some info about your project, and I will get back to you as soon as I can. Please allow a couple of days for me to respond.
+        </p>
+    
+        <!-- Contact Details -->
+        <div class="mt-6 space-y-6">
+          <!-- Name -->
+          <div class="flex items-center space-x-3">
+            <div class="bg-blue-100 text-blue-600   rounded-full p-2">
+              <i class="fas fa-user text-lg"></i>
+            </div>
+            <div>
+              <p class="font-semibold">Name</p>
+              <p class="">Gauri Singh</p>
+            </div>
+          </div>
+    
+          <!-- Address -->
+          <div class="flex items-center space-x-3">
+            <div class="bg-blue-100 text-blue-600 rounded-full p-2">
+              <i class="fas fa-map-marker-alt text-lg"></i>
+            </div>
+            <div>
+              <p class="font-semibold">Address</p>
+              <p class="">Rajasthan Alwar</p>
+            </div>
+          </div>
+    
+          <!-- Email -->
+          <div class="flex items-center space-x-3">
+            <div class="bg-blue-100 text-blue-600 rounded-full p-2">
+              <i class="fas fa-envelope text-lg"></i>
+            </div>
+            <div>
+              <p class="font-semibold">Email</p>
+              <p class="">gaurisingh78783@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   
+    
+  
+    <!-- Login Card -->
+    <div class=" shadow-md rounded-lg w-full max-w-sm p-6 "data-aos="fade-left"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+      <!-- Header -->
+      <div class="text-center">
+        <h2 class="text-2xl font-bold">Message Me</h2>
+        
+      </div>
+  
+      <!-- Login Form -->
+      
+      <form class="mt-6 space-y-4">
+        <!-- Email Input -->
+
+        <div class="relative">
+          <label for="name" class="sr-only">Name</label>
+          <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2">
+            <!-- Heroicon User Icon -->
+            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+            </svg>
+            <input
+              id="name"
+              type="text"
+              class="flex-1 ml-3 text-sm bg-transparent outline-none"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+        </div>
+        <div class="relative">
+            <label for="email" class="sr-only">Email</label>
+            <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2">
+                <!-- Heroicon Email Icon -->
+                <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H3m5 4l-5-4m5-4l-5 4m13 8V4m0 0l4 4m-4-4l-4 4"></path>
+                </svg>
+                <input
+                    id="email"
+                    type="email"
+                    class="flex-1 ml-3 text-sm bg-transparent outline-none"
+                    placeholder="Enter your email"
+                    required
+                />
+            </div>
+        </div>
+
+        <!-- Password Input -->
+        <div class="relative">
+            <label for="password" class="sr-only">Password</label>
+            <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2">
+                <!-- Heroicon Lock Icon -->
+                <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11V7a4 4 0 00-8 0v4m8 0h6m-6 0v2m0-2H6m6 0v6"></path>
+                </svg>
+                <input
+                    id="password"
+                    type="password"
+                    class="flex-1 ml-3 text-sm bg-transparent outline-none"
+                    placeholder="Enter your password"
+                    required
+                />
+            </div>
+        </div>
+
+        <!-- Remember Me and Forgot Password -->
+        <div class="flex items-center justify-between text-sm">
+            <label class="flex items-center space-x-2">
+                <input type="checkbox" class="text-blue-500 form-checkbox">
+                <span class="">Remember me</span>
+            </label>
+            <a href="#" class="text-blue-500 hover:text-gray-500">Forgot Password?</a>
+        </div>
+
+        <!-- Login Button -->
+        <div>
+            <button
+                type="submit"
+                class="w-full bg-blue-500 text-white py-2 rounded-lg shadow-md hover:bg-blue-600 transition">
+                Login
+            </button>
+        </div>
+    </form>
+
+  
+      <!-- Footer -->
+      <div class="mt-6 text-center text-sm ">
+        <p>
+          Don't have an account?
+          <a href="#" class="text-blue-500 hover:text-gray-500">Sign up here</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+ 
+  <!-- Repeat for each card -->
+  <footer class="bg-blue-600 text-white py-8">
+    <div class="container mx-auto px-6 md:px-12">
+        <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            
+            <!-- Footer Navigation -->
+            <nav class="mb-4 md:mb-0">
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                    <li><a href="#services" class="hover:text-gray-300">Services</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.596 0 0 .6 0 1.337v21.326C0 23.4.596 24 1.325 24H12.82V14.708h-3.438v-3.613h3.438v-2.665c0-3.408 2.075-5.275 5.105-5.275 1.442 0 2.684.107 3.047.155v3.35H18.31c-1.719 0-2.05.818-2.05 2.015v2.42h3.963l-.517 3.613H16.26V24h6.415C23.4 24 24 23.4 24 22.663V1.337C24 .6 23.4 0 22.675 0z"/></svg>
+                </a>
+                <a href="#" class="hover:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775A4.994 4.994 0 0023.337 3a10.07 10.07 0 01-3.18 1.221A4.92 4.92 0 0016.616 2c-2.737 0-4.957 2.22-4.957 4.942 0 .39.046.765.13 1.127C7.728 7.886 4.1 5.841 1.67 2.912a4.926 4.926 0 00-.67 2.476c0 1.708.87 3.216 2.188 4.1a4.92 4.92 0 01-2.24-.62v.062c0 2.385 1.7 4.372 3.946 4.825a4.99 4.99 0 01-2.228.085c.63 1.956 2.455 3.377 4.616 3.418a9.867 9.867 0 01-6.092 2.102c-.398 0-.79-.023-1.17-.067a13.935 13.935 0 007.548 2.212c9.055 0 14.002-7.5 14.002-14 0-.213-.005-.425-.014-.637A10.025 10.025 0 0024 4.59a9.94 9.94 0 01-2.047.561z"/></svg>
+                </a>
+                <a href="#" class="hover:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24"><path d="M12 2.163c-5.488 0-9.943 4.455-9.943 9.943 0 4.376 3.57 8.011 8.191 8.813v-6.245h-2.47v-2.568h2.47V9.14c0-2.435 1.415-3.78 3.577-3.78 1.034 0 2.114.184 2.114.184v2.328h-1.192c-1.175 0-1.54.73-1.54 1.482v1.77h2.617l-.418 2.568h-2.2v6.245c4.621-.802 8.191-4.437 8.191-8.813 0-5.488-4.455-9.943-9.943-9.943z"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Dark Mode Toggle -->
+       
+
+        <!-- Copyright -->
+        <p class="text-center mt-4 text-gray-300">&copy; 2025 Your Company. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menu = document.getElementById("mobile-menu");
+        const openBtn = document.getElementById("open-menu");
+        const closeBtn = document.getElementById("close-menu");
+
+        openBtn.addEventListener("click", function () {
+            menu.classList.remove("hidden");
+        });
+
+        closeBtn.addEventListener("click", function () {
+            menu.classList.add("hidden");
+        });
+    });
+
+
+    // <!-- JavaScript for Dark Mode -->
+    document.getElementById("toggle-dark-mode").addEventListener("click", function () {
+        document.body.classList.toggle("bg-gray-900");
+        document.body.classList.toggle("text-white");
+    });
+</script>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
