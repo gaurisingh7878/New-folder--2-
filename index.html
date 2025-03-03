@@ -468,7 +468,11 @@
   
   
   
-  
+  <button id="scrollToTop" class="fixed bottom-6 right-6 bg-blue-500 text-white rounded-full p-3 shadow-lg hidden lg:block hover:bg-blue-400 focus:outline-none transition duration-300 ease-in-out" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+        <path d="M12 4v12m0 0l4-4m-4 4l-4-4"></path>
+    </svg>
+</button>
  
   <!-- Repeat for each card -->
   <footer class="bg-blue-600 text-white py-8">
@@ -508,7 +512,25 @@
 </footer>
 
 
+<script>
+        
+  // Get the button
+  const scrollToTopButton = document.getElementById("scrollToTop");
 
+  // Show the button when the user scrolls down 300px from the top of the document
+  window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          scrollToTopButton.classList.remove("hidden");
+      } else {
+          scrollToTopButton.classList.add("hidden");
+      }
+  };
+
+  // Scroll to top when the button is clicked
+  scrollToTopButton.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
         const menu = document.getElementById("mobile-menu");
