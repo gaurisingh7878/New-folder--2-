@@ -187,7 +187,7 @@ animation: slide-in-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 }
 
-.custom-shape-divider-bottom-1741088951 {
+.custom-shape-divider-bottom-1741090593 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -197,22 +197,13 @@ animation: slide-in-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1741088951 svg {
+.custom-shape-divider-bottom-1741090593 svg {
   position: relative;
   display: block;
-  width: calc(117% + 1.3px);
-  height: 231px;
-  transform: rotateY(180deg);
+  width: calc(136% + 1.3px);
+  height: 260px;
 }
 
-.custom-shape-divider-bottom-1741088951 .shape-fill {
-  fill: #504799;
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .custom-shape-divider-bottom-1741088951 svg {
-      width: calc(117% + 1.3px);
-      height: 132px;
-  }
+.custom-shape-divider-bottom-1741090593 .shape-fill {
+  fill: #FFFFFF;
 }
