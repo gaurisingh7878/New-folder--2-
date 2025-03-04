@@ -186,3 +186,33 @@ animation: slide-in-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   opacity: 1;
 }
 }
+
+.custom-shape-divider-bottom-1741088951 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1741088951 svg {
+  position: relative;
+  display: block;
+  width: calc(117% + 1.3px);
+  height: 231px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1741088951 .shape-fill {
+  fill: #504799;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1741088951 svg {
+      width: calc(117% + 1.3px);
+      height: 132px;
+  }
+}
